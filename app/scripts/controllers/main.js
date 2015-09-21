@@ -1,3 +1,4 @@
+(function(){
 'use strict';
 
 /**
@@ -15,3 +16,5 @@ angular.module('expensesForeseeAngularApp')
       'Karma'
     ];
   });
+
+})();
