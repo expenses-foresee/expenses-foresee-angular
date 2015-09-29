@@ -1,6 +1,9 @@
 (function(){
-  angular.module('expensesForeseeAngularApp')
-  .controller('ItemsIndexCtrl', function ($scope, $routeParams, Item) {
+  angular
+  .module('expensesForeseeAngularApp')
+  .controller('ItemsIndexCtrl', ItemsIndexCtrl);
+
+  function ItemsIndexCtrl($scope, Item) {
   	$scope.items = Item.query();
-  });
+  }
 })();
